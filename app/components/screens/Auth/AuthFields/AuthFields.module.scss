@@ -1,0 +1,9 @@
+.form {
+	@apply flex flex-col gap-6;
+
+	> .button {
+		@apply bg-gray-900 border rounded-layout-10 border-gray-700 mt-4 text-white font-semibold;
+		font-size: 20px;
+		height: 50px;
+	}
+}

@@ -1,7 +1,9 @@
-import { Inter } from '@next/font/google'
+import dynamic from 'next/dynamic'
 
-const inter = Inter({ subsets: ['latin'], variable: '--inter-font' })
+const DynamicAuth = dynamic(() => import('@/screens/Auth/Auth'), {
+	ssr: false
+})
 
-export default function Home() {
-	return <></>
+export default function HomePage() {
+	return <DynamicAuth />
 }

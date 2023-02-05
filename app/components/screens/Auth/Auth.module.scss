@@ -1,0 +1,28 @@
+.page {
+	@apply flex justify-center items-center flex-col mt-32;
+}
+
+.desc {
+	@apply mb-10 flex items-center flex-col gap-8;
+}
+
+.title {
+	@apply text-3xl text-white font-semibold;
+}
+
+.login {
+	@apply island-15 p-12 mb-8;
+}
+
+.register {
+	@apply island-15 p-7 text-center;
+	width: 500px;
+	> div {
+		@apply text-gray-500 text-sm font-medium;
+	}
+	> .button {
+		@apply bg-green rounded-layout-10 w-full  mt-4 text-white font-semibold;
+		font-size: 20px;
+		height: 50px;
+	}
+}
