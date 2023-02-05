@@ -1,0 +1,13 @@
+.input {
+	@apply px-5 bg-gray-800 rounded-layout-10 border border-gray-600 transition-all;
+	width: 400px;
+	height: 50px;
+	> input {
+		@apply h-full w-full bg-transparent text-white;
+		font-size: 14px;
+	}
+}
+
+.error {
+	@apply border-red-600;
+}

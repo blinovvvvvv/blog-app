@@ -1,0 +1,22 @@
+.input {
+	@apply bg-transparent text-white -mr-2;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.bar {
+	@apply bg-gray-900 flex items-center pl-5 border-gray-700 border rounded-layout-10 text-sm text-gray-500;
+	height: 100%;
+}
+
+.wrapper {
+	height: 30px;
+	width: 250px;
+	grid-column-start: 2;
+}
+
+.result {
+	@apply bg-gray-900 pl-5 rounded-layout-10 text-sm text-white mt-1 p-3 animate-fade;
+	font-size: 14px;
+	font-weight: 500;
+}

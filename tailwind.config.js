@@ -70,7 +70,7 @@ module.exports = {
 		}
 	},
 	plugins: [
-		plugin(({ addUtilities }) => {
+		plugin(({ addUtilities, addComponents }) => {
 			addUtilities({
 				'.image-like-bg': {
 					objectPosition: 'center',
@@ -81,7 +81,17 @@ module.exports = {
 					outline: 'none',
 					border: 'none'
 				}
-			})
+			}),
+				addComponents({
+					'.island-15': {
+						borderRadius: '15px',
+						backgroundColor: primary
+					},
+					'.island-10': {
+						borderRadius: '10px',
+						backgroundColor: primary
+					}
+				})
 		})
 	]
 }
