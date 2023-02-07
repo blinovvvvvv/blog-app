@@ -2,8 +2,6 @@ import { FC } from 'react'
 
 import Header from '@/components/screens/Home/Header/Header'
 
-import Field from '@/ui/field/Field'
-
 import Meta from '../../../utils/meta/Meta'
 import Layout from '../../layout/Layout'
 
@@ -14,9 +12,6 @@ const Home: FC = () => {
 		<Meta title={'Домашняя'}>
 			<Header />
 			<Layout>
-				<div className={'text-white'} style={{ fontWeight: 500 }}>
-					<Field placeholder={'Номер телефона'} />
-				</div>
 				<Subscriptions />
 			</Layout>
 		</Meta>
