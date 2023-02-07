@@ -1,0 +1,25 @@
+.profile {
+	@apply island-10 p-3 my-6 transition-transform;
+	max-width: 210px;
+	> ul {
+		@apply mb-0 mt-3 p-0 transition-transform;
+	}
+	> .info {
+		@apply flex items-center justify-between transition-transform;
+		> svg {
+			@apply cursor-pointer fill-gray-300;
+		}
+		> a {
+			@apply flex gap-4 items-center font-medium;
+			font-size: 14px;
+
+			> span {
+				@apply flex gap-1;
+				> span {
+					@apply truncate;
+					max-width: 98px;
+				}
+			}
+		}
+	}
+}

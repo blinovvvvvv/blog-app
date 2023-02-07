@@ -7,6 +7,7 @@ import { useAuth } from '@/hooks/useAuth'
 
 const MenuList: FC = () => {
 	const { user } = useAuth()
+	console.log(user?.isAdmin)
 	return (
 		<div>
 			<Menu items={menus[0].items} />
