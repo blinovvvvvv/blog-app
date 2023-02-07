@@ -43,7 +43,7 @@ const additionalMenu: IMenu = {
 		{
 			icon: FaMusic,
 			title: 'Музыка',
-			link: '/message'
+			link: '/music'
 		}
 	]
 }

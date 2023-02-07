@@ -6,7 +6,7 @@ import { IMenu } from '@/components/layout/Sidebar/Menu/menu.interface'
 
 import styles from './Menu.module.scss'
 
-const Menu: FC<IMenu> = ({ items, isAdmin = false }) => {
+const Menu: FC<IMenu> = ({ items, isAdmin }) => {
 	return (
 		<ul className={styles.menu}>
 			{items.map(item => (
