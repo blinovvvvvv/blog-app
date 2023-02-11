@@ -1,0 +1,37 @@
+.wrapper {
+	@apply island-10 px-4 py-3 flex items-center;
+	> form {
+		@apply w-full;
+
+		> div {
+			@apply mt-4;
+			> div {
+				@apply flex justify-between mt-3;
+			}
+		}
+	}
+	width: 690px;
+}
+
+.input {
+	@apply bg-gray-800 rounded-layout-15 w-full;
+	padding: 7px 20px;
+	font-size: 14px;
+}
+
+.button {
+	@apply rounded-layout-10 text-gray-300 bg-gray-700 px-4 py-1 font-medium transition-colors;
+	font-size: 14px;
+	&:hover {
+		@apply bg-gray-600 text-white;
+	}
+}
+
+.upload {
+	@apply text-gray-400 cursor-pointer hover:text-white font-medium transition-colors;
+	font-size: 14px;
+}
+
+.error {
+	@apply border border-red-600;
+}

@@ -11,7 +11,7 @@ export const PostService = {
 		})
 	},
 
-	async createPost(text: string, imagePath: string) {
+	async createPost(text: string, imagePath?: string) {
 		return instance.post<IPost>(`/${POST}/create`, { text, imagePath })
 	},
 

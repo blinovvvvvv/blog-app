@@ -1,5 +1,8 @@
 import { FC } from 'react'
 
+import CreatePost from '@/screens/Home/CreatePost/CreatePost'
+import Feed from '@/screens/Home/Feed/Feed'
+
 import Header from '@/components/screens/Home/Header/Header'
 
 import Meta from '../../../utils/meta/Meta'
@@ -12,6 +15,10 @@ const Home: FC = () => {
 		<Meta title={'Домашняя'}>
 			<Header />
 			<Layout>
+				<div>
+					<CreatePost />
+					<Feed />
+				</div>
 				<Subscriptions />
 			</Layout>
 		</Meta>

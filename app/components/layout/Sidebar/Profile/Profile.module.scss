@@ -1,11 +1,11 @@
 .profile {
-	@apply island-10 p-3 my-6 transition-transform;
+	@apply island-10 mb-6 transition-transform;
 	max-width: 210px;
 	> ul {
-		@apply mb-0 mt-3 p-0 transition-transform;
+		@apply pt-0 transition-transform;
 	}
 	> .info {
-		@apply flex items-center justify-between transition-transform;
+		@apply flex items-center p-3 justify-between transition-transform;
 		> svg {
 			@apply cursor-pointer fill-gray-300;
 		}

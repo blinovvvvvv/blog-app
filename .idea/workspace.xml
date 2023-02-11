@@ -35,7 +35,7 @@
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\projects\\garik-net\\frontend\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\garik-net\\frontend\\node_modules\\typescript\\lib&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -85,6 +85,11 @@
       <workItem from="1675510521656" duration="17360000" />
       <workItem from="1675578728708" duration="23263000" />
       <workItem from="1675772238912" duration="14842000" />
+      <workItem from="1675866731304" duration="7516000" />
+      <workItem from="1675953317695" duration="7291000" />
+      <workItem from="1675961523447" duration="4631000" />
+      <workItem from="1676044225243" duration="3870000" />
+      <workItem from="1676097092613" duration="1173000" />
     </task>
     <servers />
   </component>

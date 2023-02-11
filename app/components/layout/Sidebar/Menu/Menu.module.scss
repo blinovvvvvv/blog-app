@@ -1,4 +1,10 @@
 .menu {
-	@apply px-3 py-4 mb-6 island-10;
-	max-width: 210px;
+	@apply px-3 py-5 mb-6 island-10;
+	width: 210px;
+
+	> div {
+		&:not(:last-child) {
+			@apply mb-3;
+		}
+	}
 }
