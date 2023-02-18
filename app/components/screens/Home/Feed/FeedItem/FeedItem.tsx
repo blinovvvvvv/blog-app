@@ -3,9 +3,8 @@ import { FC } from 'react'
 
 import FeedInfo from '@/components/screens/Home/Feed/FeedItem/FeedInfo/FeedInfo'
 
-import styles from '../Feed.module.scss'
-
 import FeedReactions from './FeedActions/FeedReactions'
+import styles from './FeedItem.module.scss'
 import { useItem } from './useItem'
 
 interface IFeedItem {

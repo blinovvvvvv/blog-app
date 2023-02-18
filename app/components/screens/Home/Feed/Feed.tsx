@@ -14,7 +14,7 @@ const Feed: FC = () => {
 	const [page, setPage] = useState(1)
 	const [posts, setPosts] = useState<IPost[]>([])
 
-	const { data, isLoading, refetch } = usePosts(page, setPosts)
+	const { isLoading, refetch } = usePosts(page, setPosts)
 
 	useEffect(() => {
 		refetch()
@@ -31,7 +31,6 @@ const Feed: FC = () => {
 				onChange={inView => {
 					if (inView) {
 						setPage(prevPage => prevPage + 1)
-						console.log(page)
 						refetch()
 					}
 				}}

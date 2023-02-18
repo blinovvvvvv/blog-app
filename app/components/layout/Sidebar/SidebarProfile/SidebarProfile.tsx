@@ -27,7 +27,12 @@ const SidebarProfile: FC = () => {
 				<>
 					<div className={styles.info}>
 						<Link href={'/profile'}>
-							<Image src={profile?.avatarPath || avatar} alt={'profile logo'} />
+							<Image
+								src={profile?.avatarPath || avatar}
+								alt={'profile logo'}
+								width={35}
+								height={35}
+							/>
 							<span>
 								<span>
 									{profile?.name} {profile?.surname}

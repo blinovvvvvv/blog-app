@@ -1,0 +1,36 @@
+.profile {
+	@apply w-full flex justify-between items-end island-10 px-4 py-6 mb-10;
+
+	> .info {
+		@apply flex gap-5 items-end;
+		> span {
+			> .credentials {
+				font-size: 18px;
+				@apply font-medium flex items-center gap-2 truncate;
+			}
+
+			> div {
+				@apply font-normal truncate;
+				font-size: 14px;
+			}
+		}
+	}
+
+	> .edit {
+		@apply py-2 px-5 font-medium bg-gray-800 hover:bg-gray-700 transition-colors rounded-layout-10;
+		font-size: 14px;
+	}
+}
+
+.wrapper {
+	@apply w-full;
+	> div {
+		@apply flex justify-between;
+		> .posts {
+			width: 690px;
+		}
+		> .subs {
+			@apply text-center self-start island-10 px-12 py-4 font-medium;
+		}
+	}
+}
