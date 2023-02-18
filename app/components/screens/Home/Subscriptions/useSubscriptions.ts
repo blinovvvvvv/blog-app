@@ -1,4 +1,4 @@
-import { useProfile } from '@/components/layout/Sidebar/Profile/useProfile'
+import { useProfile } from '@/components/layout/Sidebar/SidebarProfile/useProfile'
 
 export const useSubscriptions = () => {
 	const { profile, isLoading } = useProfile()

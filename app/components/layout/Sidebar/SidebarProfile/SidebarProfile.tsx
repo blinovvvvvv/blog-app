@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { FC } from 'react'
 import { BsChevronDown } from 'react-icons/bs'
 
-import ProfileMenu from '@/components/layout/Sidebar/Profile/ProfileMenu'
-import { useProfile } from '@/components/layout/Sidebar/Profile/useProfile'
+import ProfileMenu from '@/components/layout/Sidebar/SidebarProfile/ProfileMenu'
+import { useProfile } from '@/components/layout/Sidebar/SidebarProfile/useProfile'
 
 import Loader from '@/ui/loader/loader'
 
@@ -13,9 +13,9 @@ import { useOutside } from '@/hooks/useOutside'
 import avatar from '@/assets/images/avatar-template.png'
 import verifiedIcon from '@/assets/images/verified.svg'
 
-import styles from './Profile.module.scss'
+import styles from './SidebarProfile.module.scss'
 
-const Profile: FC = () => {
+const SidebarProfile: FC = () => {
 	const { profile, isLoading } = useProfile()
 	const { ref, isShow, setIsShow } = useOutside(false)
 
@@ -55,4 +55,4 @@ const Profile: FC = () => {
 	)
 }
 
-export default Profile
+export default SidebarProfile

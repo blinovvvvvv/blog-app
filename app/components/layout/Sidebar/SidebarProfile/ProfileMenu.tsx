@@ -8,8 +8,6 @@ import styles from '@/components/layout/Sidebar/Menu/MenuItem/MenuItem.module.sc
 
 import { useActions } from '@/hooks/useActions'
 
-import { logout } from '@/store/user/user.actions'
-
 const ProfileMenu: FC = () => {
 	const { logout } = useActions()
 	return (

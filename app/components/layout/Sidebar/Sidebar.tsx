@@ -1,12 +1,12 @@
 import { FC } from 'react'
 
 import MenuList from '@/components/layout/Sidebar/Menu/MenuList'
-import Profile from '@/components/layout/Sidebar/Profile/Profile'
+import SidebarProfile from '@/components/layout/Sidebar/SidebarProfile/SidebarProfile'
 
 const Sidebar: FC = () => {
 	return (
 		<div>
-			<Profile />
+			<SidebarProfile />
 			<MenuList />
 		</div>
 	)
