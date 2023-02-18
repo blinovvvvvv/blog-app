@@ -3,6 +3,8 @@ import { MdSearch } from 'react-icons/md'
 
 import { useSearch } from '@/screens/Home/Header/SearchBar/useSearch'
 
+import UserItem from '@/components/ui/user-item/UserItem'
+
 import styles from './SearchBar.module.scss'
 
 const SearchBar: FC = () => {
@@ -22,7 +24,11 @@ const SearchBar: FC = () => {
 			{isSuccess && (
 				<div className={styles.result}>
 					{data?.length ? (
-						data?.length /*<div>{data?.map(item => <UserItem />)}</div>*/
+						<div>
+							{data?.map(item => (
+								<UserItem user={item} key={item.id} />
+							))}
+						</div>
 					) : (
 						<div>Пользователи не найдены :(</div>
 					)}

@@ -1,0 +1,10 @@
+.user > a {
+	@apply flex font-medium items-center gap-3;
+
+	> span {
+		@apply flex items-center gap-1.5;
+		> span {
+			@apply truncate;
+		}
+	}
+}
