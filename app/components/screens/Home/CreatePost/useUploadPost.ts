@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
-import { useMutation } from 'react-query'
+import { useMutation, useQueryClient } from 'react-query'
 
 import { ICreatePost } from '@/screens/Home/CreatePost/create-post.interface'
 
@@ -14,15 +14,17 @@ export const useUploadPost = () => {
 			mode: 'onChange'
 		})
 
+	const queryClient = useQueryClient()
+
 	const [previewImage, setPreviewImage] = useState('')
 
-	const { mutate } = useMutation(
-		(data: ICreatePost) => PostService.createPost(data.text, data.imagePath)
-		//TODO: invalidate query feed
+	const { mutateAsync } = useMutation((data: ICreatePost) =>
+		PostService.createPost(data.text, data.imagePath)
 	)
 
-	const onSubmit: SubmitHandler<ICreatePost> = data => {
-		mutate(data)
+	const onSubmit: SubmitHandler<ICreatePost> = async data => {
+		await mutateAsync(data)
+		await queryClient.invalidateQueries()
 		reset()
 		setPreviewImage('')
 	}

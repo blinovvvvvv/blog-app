@@ -1,0 +1,21 @@
+.reaction {
+	@apply mt-2;
+
+	> .row {
+		@apply flex gap-5 items-center;
+
+		> button {
+			@apply flex items-center gap-1.5 font-medium;
+			font-size: 14px;
+			color: gray;
+
+			> span {
+				@apply transition-colors;
+			}
+		}
+
+		.liked {
+			color: #ec3c3c;
+		}
+	}
+}

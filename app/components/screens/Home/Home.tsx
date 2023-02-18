@@ -3,11 +3,11 @@ import { FC } from 'react'
 import CreatePost from '@/screens/Home/CreatePost/CreatePost'
 import Feed from '@/screens/Home/Feed/Feed'
 
-import Header from '@/components/screens/Home/Header/Header'
-
 import Meta from '../../../utils/meta/Meta'
 import Layout from '../../layout/Layout'
 
+import Header from './Header/Header'
+import styles from './Home.module.scss'
 import Subscriptions from './Subscriptions/Subscriptions'
 
 const Home: FC = () => {
@@ -15,7 +15,7 @@ const Home: FC = () => {
 		<Meta title={'Домашняя'}>
 			<Header />
 			<Layout>
-				<div>
+				<div className={styles.feed}>
 					<CreatePost />
 					<Feed />
 				</div>

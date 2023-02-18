@@ -1,0 +1,26 @@
+.subscriptions {
+	font-size: 14px;
+	@apply island-10 flex gap-3 flex-col p-4;
+	width: 210px;
+}
+
+.item > a {
+	@apply flex gap-2.5 items-center;
+
+	> .info {
+		@apply font-medium;
+		font-size: 14px;
+	}
+}
+
+.wrapper {
+	@apply text-center;
+
+	> .link {
+		@apply w-full py-1 block bg-gray-800 rounded-layout-10 text-gray-300 transition-colors;
+		font-size: 14px;
+		&:hover {
+			@apply bg-gray-600 text-white;
+		}
+	}
+}

@@ -24,6 +24,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/projects/garik-net/frontend/node_modules/prettier&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -89,7 +90,29 @@
       <workItem from="1675953317695" duration="7291000" />
       <workItem from="1675961523447" duration="4631000" />
       <workItem from="1676044225243" duration="3870000" />
-      <workItem from="1676097092613" duration="1173000" />
+      <workItem from="1676097092613" duration="9453000" />
+      <workItem from="1676119971083" duration="10874000" />
+      <workItem from="1676185996124" duration="7793000" />
+      <workItem from="1676213421518" duration="1895000" />
+      <workItem from="1676232622135" duration="90000" />
+      <workItem from="1676232730567" duration="70000" />
+      <workItem from="1676232818805" duration="67000" />
+      <workItem from="1676232901422" duration="86000" />
+      <workItem from="1676233005046" duration="647000" />
+      <workItem from="1676233678216" duration="412000" />
+      <workItem from="1676234112486" duration="157000" />
+      <workItem from="1676234285629" duration="190000" />
+      <workItem from="1676297092932" duration="162000" />
+      <workItem from="1676297315818" duration="130000" />
+      <workItem from="1676301208390" duration="1961000" />
+      <workItem from="1676304870482" duration="104000" />
+      <workItem from="1676385694345" duration="339000" />
+      <workItem from="1676386071776" duration="10335000" />
+      <workItem from="1676402223531" duration="192000" />
+      <workItem from="1676430891950" duration="6252000" />
+      <workItem from="1676470600472" duration="8089000" />
+      <workItem from="1676517411449" duration="4778000" />
+      <workItem from="1676563161617" duration="600000" />
     </task>
     <servers />
   </component>

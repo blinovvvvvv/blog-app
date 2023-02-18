@@ -3,7 +3,7 @@
 	margin: 0 auto;
 
 	> .content {
-		@apply flex mt-6;
+		@apply flex items-start mt-6;
 		column-gap: 45px;
 	}
 }

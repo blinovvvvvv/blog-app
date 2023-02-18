@@ -9,7 +9,13 @@ import { store } from '@/store/store'
 import AuthProvider from './AuthProvider/AuthProvider'
 import HeadProvider from './HeadProvider/HeadProvider'
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+	defaultOptions: {
+		queries: {
+			refetchOnWindowFocus: false
+		}
+	}
+})
 
 const MainProvider: FC<PropsWithChildren<IComponentAuthField>> = ({
 	Component,

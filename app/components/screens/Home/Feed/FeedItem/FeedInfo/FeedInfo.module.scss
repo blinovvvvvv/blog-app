@@ -1,0 +1,16 @@
+.info > a {
+	@apply flex items-center gap-4;
+
+	.wrapper {
+		@apply flex flex-col;
+	}
+
+	.name {
+		@apply font-semibold flex items-center gap-1.5;
+		font-size: 14px;
+	}
+	.date {
+		@apply text-gray-600;
+		font-size: 12px;
+	}
+}

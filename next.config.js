@@ -6,6 +6,9 @@ const nextConfig = {
 		APP_URL: process.env.APP_URL,
 		APP_ENV: process.env.NODE_ENV
 	},
+	images: {
+		remotePatterns: [{ protocol: 'http', hostname: 'localhost', port: '4200' }]
+	},
 	async rewrites() {
 		return [
 			{

@@ -1,0 +1,16 @@
+.input {
+	@apply absolute block flex items-center w-full font-medium px-5 py-3 island-10;
+	top: calc(100% + 5px);
+	left: 0;
+	height: 50px;
+	font-size: 14px;
+
+	> input {
+		@apply bg-transparent;
+		width: 100%;
+	}
+}
+
+.list {
+	@apply flex flex-col gap-2.5 mt-4;
+}

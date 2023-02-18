@@ -1,4 +1,7 @@
+import { IUser } from '@/shared/types/user.types'
+
 export interface IComment {
 	postId: number
-	text: string
+	message: string
+	user: IUser
 }

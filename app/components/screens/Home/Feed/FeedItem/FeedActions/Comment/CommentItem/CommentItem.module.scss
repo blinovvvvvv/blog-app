@@ -1,0 +1,19 @@
+.comment {
+	@apply flex gap-3;
+
+	> .avatar {
+		width: 35px;
+		height: 35px;
+	}
+
+	> .body {
+		font-size: 14px;
+		> div {
+			@apply truncate;
+		}
+	}
+}
+
+.info > a {
+	@apply flex font-medium gap-1;
+}
