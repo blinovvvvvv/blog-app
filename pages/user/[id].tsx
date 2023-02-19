@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router'
 
+import UserProfile from '@/components/screens/UserProfile/UserProfile'
+
 import { NextPageAuth } from '@/shared/types/auth.types'
 
 const UserPage: NextPageAuth = () => {
@@ -7,7 +9,7 @@ const UserPage: NextPageAuth = () => {
 
 	const { id } = router.query
 
-	return <div>{id}</div>
+	return id ? <UserProfile id={+id} /> : <div>Пользователь не найден</div>
 }
 
 UserPage.isOnlyUser = true

@@ -15,7 +15,7 @@ export const UserService = {
 		return instance.get<IUser>(`/${USER}/profile`)
 	},
 
-	async getById(id: string) {
+	async getById(id: number) {
 		return instance.get<IUser>(`/${USER}/${id}`)
 	},
 
@@ -23,7 +23,7 @@ export const UserService = {
 		return instance.put(`/${USER}/profile`, dto)
 	},
 
-	async updateUserProfile(id: string, dto: UserDto) {
+	async updateUserProfile(id: number, dto: UserDto) {
 		return instance.put(`/${USER}/${id}`, dto)
 	},
 
