@@ -8,3 +8,18 @@
 		}
 	}
 }
+
+.big {
+	@apply island-10 px-2 py-3 flex font-medium items-center gap-3;
+}
+
+.button {
+	@apply bg-gray-600 hover:bg-gray-700 transition-colors rounded-layout-10 px-4 py-1.5 font-medium;
+	width: 130px;
+	font-size: 14px;
+	margin-left: auto;
+}
+
+.sub {
+	@apply bg-gray-800 hover:bg-gray-700;
+}

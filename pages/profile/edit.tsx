@@ -1,7 +1,9 @@
-import { NextPage } from 'next'
+import { NextPageAuth } from '@/shared/types/auth.types'
 
-const editPage: NextPage = () => {
+const EditPage: NextPageAuth = () => {
 	return <div>edit</div>
 }
 
-export default editPage
+EditPage.isOnlyUser = true
+
+export default EditPage

@@ -27,7 +27,7 @@ export const UserService = {
 		return instance.put(`/${USER}/${id}`, dto)
 	},
 
-	async subscribe(userId: string) {
+	async subscribe(userId: number) {
 		return instance.patch(`/${USER}/subscribe/${userId}`)
 	}
 }

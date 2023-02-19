@@ -20,4 +20,7 @@
 	@apply bg-gray-900 absolute w-full z-10 pl-5 rounded-layout-10 text-sm text-white mt-1 p-3 animate-fade;
 	font-size: 14px;
 	font-weight: 500;
+	> div {
+		@apply flex flex-col gap-2;
+	}
 }

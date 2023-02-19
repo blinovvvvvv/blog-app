@@ -26,7 +26,7 @@ const SearchBar: FC = () => {
 					{data?.length ? (
 						<div>
 							{data?.map(item => (
-								<UserItem user={item} key={item.id} />
+								<UserItem isSmall user={item} key={item.id} />
 							))}
 						</div>
 					) : (
